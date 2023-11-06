@@ -42,7 +42,7 @@ RF005 - Manter o cadastro de Índice | manter cadastro do indice por bairro. | C
 
 Abaixo apresentamos o modelo logico.
 
- ![Modelo Conceitual](images/logico_2.png)
+ <img src="/images/logico_2.png">
 
 
 #### Descrição das Entidades

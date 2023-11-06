@@ -27,4 +27,4 @@ para testar faça um clone desta pasta e instale o requirements.txt depois de cr
 
 # Documento de Visão
 
-![Documento de visão](docs/documento_de_visao.md)
+[Documento de visão](docs/documento_de_visao.md)

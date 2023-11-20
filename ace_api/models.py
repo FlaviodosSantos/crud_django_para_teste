@@ -9,3 +9,4 @@ class Ace(models.Model):
     
     def __str__(self):
         return self.nome 
+    

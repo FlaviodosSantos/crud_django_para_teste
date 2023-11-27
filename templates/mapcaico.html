@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Mapa de calor do {{ciclo}}º LIRA</h1>
+    <a href="mapas/mapa_do_ciclo_{{ciclo}}.html" download>Baixar</a>
+    {{ map|safe }}
+
+</div>
+
+{% endblock %}

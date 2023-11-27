@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+
+    .head_text {
+        color: white;
+    }
+
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+</style>
+
+<header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>Indices por Ciclos</h1>
+                    <a href="{% url 'indice' 1  %}" class="btn btn-primary">1º Ciclo &rarr;</a>
+                    <a href="{% url 'indice' 2  %}" class="btn btn-primary">2º Ciclo &rarr;</a>
+                    <a href="{% url 'indice' 3  %}" class="btn btn-primary">3º Ciclo &rarr;</a>
+                    <a href="{% url 'indice' 4  %}" class="btn btn-primary">4º Ciclo &rarr;</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div>
+        
+
+    </div>
+    <div>
+        <h1>Lista de Ace</h1>
+    </div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+    
+                <th scope="col">Nome</th>
+                <th scope="col">Matricula</th>
+                <th scope="col">Zona</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for a in ace_list %}
+            <tr>
+                <th scope="row">{{ a.nome }}</th>
+                <td>{{ a.matricula}}</td>
+                <td>{{ a.zona}}</td>
+    
+                <td>
+                    <a type="submit" class="btn btn-warning" href="" method="POST">Editar</a>
+                    <a type="submit" class="btn btn-danger" href="" method="POST">Exluir</a>
+                </td>
+            </tr>
+            <!-- If object_list is empty -->
+            {% empty %}
+            <h1>No objects Find</h1>
+    
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</div>
+{%endblock%}
+

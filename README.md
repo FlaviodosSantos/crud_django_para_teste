@@ -28,3 +28,19 @@ para testar faça um clone desta pasta e instale o requirements.txt depois de cr
 # Documento de Visão
 
 [Documento de visão](docs/documento_de_visao.md)
+
+
+# Testes
+### Videos:
+
+https://www.youtube.com/watch?v=JIV6fcPN1tU
+
+
+https://www.youtube.com/watch?v=pGWsUcDfVGA
+
+
+https://www.youtube.com/watch?v=27-XNVUOPcMv
+
+### Texto:
+
+https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Django/Testing

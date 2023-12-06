@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'coreapi',
     'crispy_forms',
     "crispy_bootstrap4",
+    'django_mutpy',
     'ace_api'
 ]
 

@@ -25,4 +25,11 @@ para testar faça um clone desta pasta e instale o requirements.txt depois de cr
 ``` pip install -r requirements.txt ```
 
 
+- rodar testes unitarios e gerar um html com cobertura 
+
+``` coverage run manage.py test | coverage html ```
+
+- rodar os testes de mutação
+
+``` python manage.py muttest ace_api --modules ace_api.models ```
 

@@ -25,11 +25,32 @@ para testar faça um clone desta pasta e instale o requirements.txt depois de cr
 ``` pip install -r requirements.txt ```
 
 
-- rodar testes unitarios e gerar um html com cobertura 
+# Documento de Visão
+
+[Documento de visão](docs/documento_de_visao.md)
+
+
+# Testes
+### Videos:
+
+https://www.youtube.com/watch?v=JIV6fcPN1tU
+
+
+https://www.youtube.com/watch?v=pGWsUcDfVGA
+
+
+https://www.youtube.com/watch?v=27-XNVUOPcMv
+
+### Texto:
+
+https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Django/Testing
+
+
+
+### Rodar testes unitarios e gerar um html com cobertura 
 
 ``` coverage run manage.py test | coverage html ```
 
-- rodar os testes de mutação
+### Rodar os testes de mutação
 
 ``` python manage.py muttest ace_api --modules ace_api.models ```
-

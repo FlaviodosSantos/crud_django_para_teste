@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Ace, isPrime
+from .models import Ace, is_prime
 
 
 class AceTestCase(TestCase):
@@ -28,13 +28,15 @@ class AceTestCase(TestCase):
         self.assertTrue(ace.is_active)
 
 
+
 class CalculatorTest(TestCase):
 
     def test_nonprime(self):
-        self.assertEqual(isPrime(12), False)
+        self.assertEqual(is_prime(12), False)
 
     def test_prime(self):
-        self.assertEqual(isPrime(19), True)
+        self.assertEqual(is_prime(19), True)
 
     def test_invalid(self):
-        self.assertEqual(isPrime(-1), False)
+        self.assertEqual(is_prime(-1), False)
+

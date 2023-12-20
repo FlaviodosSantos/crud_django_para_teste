@@ -54,3 +54,7 @@ https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Django/Testing
 ### Rodar os testes de mutação
 
 ``` python manage.py muttest ace_api --modules ace_api.models ```
+
+#### os alvos do muttest
+
+``` python manage.py muttest ace_api --modules ace_api.models, ace_api.urls, ace_api.views ```
